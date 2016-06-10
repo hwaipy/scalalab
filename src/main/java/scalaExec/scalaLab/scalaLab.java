@@ -2234,7 +2234,7 @@ public class scalaLab extends JFrame implements WindowListener, ActionListener {
             });
 
             JMenu JavaREPLMenu = new JMenu("Java REPL");
-            JavaREPLMenu.setToolTipText("F8 to evaluate Java scripts");
+            JavaREPLMenu.setToolTipText("F8 to evaluate Java code, Java REPL is for evaluating Java code, not Scala!");
             JavaREPLMenu.setFont(GlobalValues.uifont);
 
             JMenuItem resetJavaREPL = new JMenuItem("Reset Java REPL");

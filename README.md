@@ -42,6 +42,35 @@
 
 `package`
 
+## `ScalaLab most useful commands`
+
+
+`Press F6 executes the selected text or the current line (within a seperate thread)`
+
+`Press Ctrl-F6 cancels a pending task started with F6`
+
+`press F7 to use code completion features of the Scala Interpreter.`
+
+`CTRL-SPACE Code Completion`
+
+`Press TAB expands the abbreviation, e.g. bo<TAB> expands to Boolean`
+
+`Mouse Double Click on an identifier: displays the current value of the identifier`
+
+`Mouse cursor over an identifier displays information for that identifier`
+
+
+`Select a keyword (e.g. "fft") and press F1 for obtaining global help for the libraries where that identifier can be defined using Java reflection (e.g. we can have multiple “ffts”, thus multiple results)`
+
+`Press F2 executes code up to the cursor location. The first F2 has start position the beginning of text, subsequently the start position is updated to the end position of the previous F2`
+
+`Press F11: Expands Abbreviations`
+
+`Press F4: within an identifier (either selected or not) presents a completion list for the type of the identifier using Java reflection`
+
+`Press SHIFT-F4: within an identifier (either selected or not) presents information for the class of the identifier using Java reflection (e.g. for the javax.swing.JFrame class) with a JTree`
+
+
 
 ## ScalaLab Advantages
 

@@ -132,18 +132,11 @@ public class scalaLab extends JFrame implements WindowListener, ActionListener {
     private JMenuItem toolboxesToolbarJMenuItem;
 
     private JMenu examplesMenu;
-    private JMenuItem ScalaExamplesHelpJMenuItem;
     private JMenuItem ScalaSciExamplesHelpJMenuItem;
     private JMenuItem ScalaSciExamplesJTreeJMenuItem;
     private JMenuItem ScalaSciPlotExamplesJTreeJMenuItem;
 
-    private JMenuItem ScalaExamplesPlotHelpJMenuItem;
-    private JMenuItem ScalaExamplesODEHelpJMenuItem;
-    private JMenuItem ScalaExamplesWEKAHelpJMenuItem;
-    private JMenuItem ScalaExamplesWaveletHelpJMenuItem;
-    private JMenuItem ScalaExamplesBioJavaHelpJMenuItem;
-    private JMenuItem ScalaExamplesLAHelpJMenuItem;
-
+    
     private JMenu JavaHelpMenu;
 
     private JMenu symbolicAlgebraJMenu;
@@ -2320,59 +2313,20 @@ public class scalaLab extends JFrame implements WindowListener, ActionListener {
             ScalaSciExamplesHelpJMenuItem = new JMenuItem("ScalaSci  Examples");
             ScalaSciExamplesHelpJMenuItem.addActionListener(new scalaSciExamplesAction());
             ScalaSciExamplesHelpJMenuItem.setFont(GlobalValues.uifont);
+            
             ScalaSciExamplesJTreeJMenuItem = new JMenuItem("ScalaSci  Examples with JTree display");
             ScalaSciExamplesJTreeJMenuItem.addActionListener(new scalaSciExamplesJTreeAction());
             ScalaSciExamplesJTreeJMenuItem.setFont(GlobalValues.uifont);
             ScalaSciPlotExamplesJTreeJMenuItem = new JMenuItem("ScalaSci  Plotting Examples with JTree display");
             ScalaSciPlotExamplesJTreeJMenuItem.addActionListener(new scalaSciPlottingExamplesJTreeAction());
             ScalaSciPlotExamplesJTreeJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesHelpJMenuItem = new JMenuItem("Scala Examples");
-            ScalaExamplesHelpJMenuItem.addActionListener(new scalaExamplesAction());
-            ScalaExamplesHelpJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesPlotHelpJMenuItem = new JMenuItem("ScalaSci  Plotting Examples");
-            ScalaExamplesPlotHelpJMenuItem.addActionListener(new scalaSciExamplesPlottingAction());
-            ScalaExamplesPlotHelpJMenuItem.setFont(GlobalValues.uifont);
-
-            //ScalaExamplesPlotHelpJMenuItem.setIcon(new ImageIcon(scalaImage));
-            JMenuItem JavaSGTExamplesPlotHelpJMenuItem = new JMenuItem("Scientific Graphics: SGT Plotting Examples, in Java");
-            JavaSGTExamplesPlotHelpJMenuItem.setToolTipText("Java examples for the Scientific Graphics Toolkit plotting system. Use F9 from jsyntaxpane to run them");
-            JavaSGTExamplesPlotHelpJMenuItem.addActionListener(new JavaSGTExamplesPlottingAction());
-            JavaSGTExamplesPlotHelpJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesODEHelpJMenuItem = new JMenuItem("ScalaSci  ODE Examples (use: java  -Xss10m -Xms200m -Xmx6000m -jar scalalab.jar, to avoid stack overflow)");
-            ScalaExamplesODEHelpJMenuItem.addActionListener(new scalaSciODEExamplesAction());
-            ScalaExamplesODEHelpJMenuItem.setFont(GlobalValues.uifont);
-            JMenuItem NumAlExamplesJMenuItem = new JMenuItem("NUMAL Library ScalaSci  Examples");
-            NumAlExamplesJMenuItem.addActionListener(new scalaSciNumAlExamplesAction());
-            NumAlExamplesJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesWaveletHelpJMenuItem = new JMenuItem("ScalaSci  Wavelet Examples");
-            ScalaExamplesWaveletHelpJMenuItem.addActionListener(new scalaSciWaveletExamplesAction());
-            ScalaExamplesWaveletHelpJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesBioJavaHelpJMenuItem = new JMenuItem("BioJava Examples in Java");
-            ScalaExamplesBioJavaHelpJMenuItem.addActionListener(new scalaSciBioJavaExamplesAction());
-            ScalaExamplesBioJavaHelpJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesWEKAHelpJMenuItem = new JMenuItem("ScalaSci  WEKA Examples");
-            ScalaExamplesWEKAHelpJMenuItem.setToolTipText("Require installation of the WEKA toolbox");
-            ScalaExamplesWEKAHelpJMenuItem.addActionListener(new scalaSciWEKAExamplesAction());
-            ScalaExamplesWEKAHelpJMenuItem.setFont(GlobalValues.uifont);
-            ScalaExamplesLAHelpJMenuItem = new JMenuItem("ScalaSci  Linear Algebra Examples");
-            ScalaExamplesLAHelpJMenuItem.addActionListener(new scalaSciExamplesLAAction());
-            ScalaExamplesLAHelpJMenuItem.setEnabled(true);
-            ScalaExamplesLAHelpJMenuItem.setFont(GlobalValues.uifont);
+        
+           
             examplesMenu.setMnemonic('e');
             examplesMenu.setFont(GlobalValues.uifont);
-            examplesMenu.add(ScalaSciExamplesHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesPlotHelpJMenuItem);
             examplesMenu.add(ScalaSciExamplesJTreeJMenuItem);
             examplesMenu.add(ScalaSciPlotExamplesJTreeJMenuItem);
-            examplesMenu.add(NumAlExamplesJMenuItem);
-            examplesMenu.add(JavaSGTExamplesPlotHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesODEHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesWaveletHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesBioJavaHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesWEKAHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesLAHelpJMenuItem);
-            examplesMenu.add(ScalaExamplesHelpJMenuItem);
-            JavaHelpJMenuItem = new JMenuItem("Java API  JavaHelp");
+               JavaHelpJMenuItem = new JMenuItem("Java API  JavaHelp");
             JavaHelpJMenuItem.setToolTipText("Extensive help for the Java 6 SDK API platform");
             JavaHelpJMenuItem.setFont(GlobalValues.uifont);
             JavaHelpJMenuItem.addActionListener((ActionEvent e) -> {

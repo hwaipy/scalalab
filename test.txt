@@ -1,0 +1,3 @@
+
+
+var sc = scalaExec.Interpreter.GlobalValues.globalSimpleConsole

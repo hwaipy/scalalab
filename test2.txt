@@ -1,0 +1,7 @@
+
+
+var sc = scalaExec.Interpreter.GlobalValues.globalSimpleConsole
+
+var r = sc.completion("javax.swing.JF")
+
+r.candidates
